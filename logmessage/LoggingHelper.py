@@ -1,8 +1,9 @@
 import logging
 import os
-from typing import Dict, Optional, Any, MutableMapping
-from opencensus.ext.azure.log_exporter import AzureLogHandler
+from typing import Any, Dict, MutableMapping, Optional
+
 import azure.functions as func
+from opencensus.ext.azure.log_exporter import AzureLogHandler
 
 
 class LoggingHelper(logging.LoggerAdapter):
